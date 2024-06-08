@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/Login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>VF Login</h2>
+      <form id="loginForm" action="#" method="post">
+        <input
+          type="text"
+          id="loginUsername"
+          name="username"
+          placeholder="Username"
+        />
+        <span id="loginUsernameError" class="error-message"></span>
+        <input
+          type="password"
+          id="loginPassword"
+          name="password"
+          placeholder="Password"
+        />
+        <span id="loginPasswordError" class="error-message"></span>
+        <input type="submit" id="loginBtn" value="Login" />
+      </form>
+      <p>
+        Don't have an account? <a id="registerFormBtn" href="#">Register now</a>
+      </p>
+    </div>
+    <div class="register-container">
+      <h2>Registration Form</h2>
+      <form id="registerForm" action="#" method="post">
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+        />
+        <span id="firstNameError" class="error-message"></span>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <span id="lastNameError" class="error-message"></span>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+        <span id="usernameError" class="error-message"></span>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <span id="passwordError" class="error-message"></span>
+        <input
+          type="date"
+          id="birthdate"
+          name="birthdate"
+          placeholder="Birthdate"
+        />
+        <span id="birthdateError" class="error-message"></span>
+        <input type="submit" id="registerBtn" value="Register" />
+      </form>
+      <p>
+        Already have an account? <a id="loginFormBtn" href="#">Login now</a>
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../JS/login.js"></script>
+  </body>
+</html>

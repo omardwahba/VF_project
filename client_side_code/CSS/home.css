@@ -1,0 +1,218 @@
+* {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-font: "Anton", sans-serif;
+  --secondary-font: "Cabin", sans-serif;
+  --main-color: rgb(33, 14, 87);
+}
+nav {
+  padding: 20px 40px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+@media (max-width: 992px) {
+  nav,
+  ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  ul li {
+    padding-top: 20px;
+  }
+}
+.logo a {
+  color: #41b06e;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul li {
+  padding-right: 40px;
+}
+ul li a {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 20px;
+}
+button {
+  padding: 15px 30px;
+  border: none;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  background-color: rgb(82, 31, 220);
+  color: white;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: rgb(95, 45, 234);
+  cursor: pointer;
+}
+/*--------------------------------------------------*/
+.main-section {
+  padding: 6vw;
+  margin: auto;
+  max-width: 1000px;
+}
+.main-section h1 {
+  color: var(--main-color);
+  margin: auto;
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: 57.6px;
+  margin-bottom: 18px;
+}
+.main-section p {
+  margin-bottom: 18px;
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  letter-spacing: 0.36px;
+  line-height: 30.6px;
+  font-weight: 400;
+  font-size: 18px;
+}
+p span {
+  color: blue;
+  text-decoration: underline;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+}
+/*-----------------------------------------------*/
+.advantages {
+  padding: 2vw 6vw 2vw 6vw;
+  margin: auto;
+  max-width: 1000px;
+  background-color: #f7f7f7;
+}
+.advantages h2 {
+  width: 100%;
+  color: var(--main-color);
+  margin: auto;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57.6px;
+  margin-bottom: 18px;
+}
+.advantage:not(.advantage:last-of-type) {
+  border-bottom: 1px rgb(33, 14, 87) dashed;
+  margin-bottom: 10px;
+}
+.advantage h3 {
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 57.6px;
+}
+.advantage p {
+  margin-bottom: 18px;
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  letter-spacing: 0.36px;
+  line-height: 30.6px;
+  font-weight: 400;
+  font-size: 18px;
+} /*-----------------------------------------------------*/
+.contact {
+  padding: 6vw;
+}
+.container {
+  text-align: center;
+}
+
+.container h2 a {
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+.container p {
+  margin: -20px 0 20px;
+  font-size: 30px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.contact .contact-info {
+  margin-top: 30px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+}
+
+.contact .contact-info .label {
+  font-size: 35px;
+  font-weight: 800;
+  color: #41b06e;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.contact .contact-info .link {
+  display: block;
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info .label {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .contact .contact-info .link {
+    font-size: 15px;
+  }
+}
+
+.contact .icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+}
+
+.contact .icon i {
+  margin-left: 20px;
+  color: var(--main-color);
+  font-size: larger;
+}
+/*------------------------------------------*/
+.footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+}
+.footer span {
+  font-weight: bold;
+  color: #6adcd0;
+}

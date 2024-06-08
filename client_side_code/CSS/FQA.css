@@ -1,0 +1,238 @@
+* {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-font: "Anton", sans-serif;
+  --secondary-font: "Cabin", sans-serif;
+  --main-color: rgb(33, 14, 87);
+}
+.main-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10vw 6vw 3vw;
+}
+.header {
+  max-width: 700px;
+}
+.header h1 {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 55.6px;
+  color: var(--main-color);
+  margin-bottom: 32px;
+}
+.header p {
+  font-size: 18px;
+  font-weight: 400px;
+  letter-spacing: 0.36px;
+  line-height: 30.6px;
+  margin-bottom: 18px;
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+}
+.header p a {
+  text-decoration: none;
+}
+.image {
+  width: 300px;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .image {
+    display: none;
+  }
+}
+
+.image img {
+  width: 100%;
+  height: 300px;
+}
+/*-------------------------------------------------*/
+.FQA {
+  padding: 3.3vw 6vw;
+  background-color: #f1fefe;
+}
+.container {
+  margin-bottom: 50px;
+}
+.FQA h1 {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 55.6px;
+  color: var(--main-color);
+  margin-bottom: 32px;
+}
+.accordion h3,
+.accordion div,
+.accordion h3:hover {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.accordion div {
+  margin-bottom: 15px;
+}
+.custom-h3 {
+  background: none;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.custom-p {
+  background: none;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  line-height: 30.6px;
+  scroll-behavior: unset;
+}
+/*------------------------*/
+.footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+  color: #6adcd0;
+}
+/* ------------------------------------------------------------------ */
+.post-container {
+  padding: 6vw;
+}
+.new-post {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.new-post-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.new-post-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.new-post-button:hover {
+  background-color: #165dc2;
+}
+.post {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic,
+.comment-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-user-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-user-info p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.post-content p {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+.post-comments .comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.comment-content {
+  background-color: #f0f2f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.comment-content h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.comment-content p {
+  margin: 0;
+  font-size: 14px;
+}
+.add-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.comment-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.comment-button:hover {
+  background-color: #165dc2;
+}
