@@ -94,7 +94,8 @@ h1 {
   padding: 30px;
   box-shadow: 2px 1px 2px 0 black;
   width: 400px;
-  height: 500px;
+  height:560px;
+  overflow: auto;
 }
 .card h2 {
   color: var(--main-color);
